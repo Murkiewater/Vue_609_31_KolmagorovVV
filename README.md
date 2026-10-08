@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # vue-project
+=======
+# vue-gadgets
+>>>>>>> 4880e880e70ec34103746661e86dfeafa4cfce13
 
 This template should help get you started developing with Vue 3 in Vite.
 

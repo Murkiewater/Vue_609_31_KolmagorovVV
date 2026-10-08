@@ -1,4 +1,5 @@
 <script setup>
+<<<<<<< HEAD
 import { onMounted, ref } from 'vue'
 import axios from 'axios'
 
@@ -105,6 +106,15 @@ onMounted(async () => {
     </footer>
   </body>
 
+=======
+import MyComponent from './components/MyComponent.vue';
+import MyNewComponent from './components/MyNewComponent.vue';
+</script>
+
+<template>
+  <MyComponent />
+  <MyNewComponent />
+>>>>>>> 4880e880e70ec34103746661e86dfeafa4cfce13
 </template>
 
 <style scoped></style>
