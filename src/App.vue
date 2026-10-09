@@ -1,27 +1,5 @@
 <script setup>
-<<<<<<< HEAD
-import { onMounted, ref } from 'vue'
-import axios from 'axios'
-
-import ProductList from './components/ProductList.vue';
-const items = ref([]);
-const fetchItems = async () => {
-  try {
-    const { data } = await axios.get(
-      'https://5da094f59ee2cbee.mokky.dev/items'
-    );
-    items.value = data.map((object) => ({
-      ...object,
-      isFavorite: false,
-      isAdded: false,
-    }));
-  } catch(error) {
-    console.log(error);
-  }
-};
-onMounted(async () => {
-  await fetchItems();
-});
+import VCatalog from './components/VCatalog.vue';
 </script>
 
 <template>
@@ -94,10 +72,7 @@ onMounted(async () => {
             </div>
         </div>
       </nav>
-      <main class="mx-auto w-[1440px] pt-10">
-        <h1 class="text-[40px] font-bold mb-5">Каталог</h1>
-        <product-list :items="items"></product-list>
-      </main>
+        <v-catalog />
     </div>
     <footer class="p-6 bg-slate-100">
       <div class="text-center text-slate-500">
@@ -106,15 +81,6 @@ onMounted(async () => {
     </footer>
   </body>
 
-=======
-import MyComponent from './components/MyComponent.vue';
-import MyNewComponent from './components/MyNewComponent.vue';
-</script>
-
-<template>
-  <MyComponent />
-  <MyNewComponent />
->>>>>>> 4880e880e70ec34103746661e86dfeafa4cfce13
 </template>
 
 <style scoped></style>
